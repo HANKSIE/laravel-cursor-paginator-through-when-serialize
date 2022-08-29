@@ -1,0 +1,38 @@
+{
+  "name": "hanksie/laravel-cursor-paginator-through-when-serialize",
+  "description": "add a method named throughWhenSerialize() to register callback for transforming paginator's data when serializing",
+  "minimum-stability": "dev",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Hanksie\\CursorPaginator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Hanksie\\CursorPaginator\\Tests\\": "tests/",
+      "Hanksie\\CursorPaginator\\Database\\Factories\\": "database/factories"
+    }
+  },
+  "authors": [
+    {
+      "name": "hanksie",
+      "email": "kkuuccff@gmail.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hanksie\\CursorPaginator\\CursorPaginatorProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "9.5.x-dev",
+    "orchestra/testbench": "6.x-dev"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
+}
