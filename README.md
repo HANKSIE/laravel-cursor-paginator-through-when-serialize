@@ -1,6 +1,5 @@
-<p align="center">
 [![test](https://github.com/hanksie/laravel-cursor-paginator-through-when-serialize/actions/workflows/test.yml/badge.svg)](https://github.com/HANKSIE/laravel-cursor-paginator-through-when-serialize/actions)
-</p>
+
 ### Why make the package:
 
 When using `AbstractCursorPaginator::through()` or `AbstractCursorPaginator::getCollection()->transform()` to transform each item, and serializing
