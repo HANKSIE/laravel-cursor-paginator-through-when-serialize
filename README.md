@@ -1,4 +1,4 @@
-https://github.com/hanksie/laravel-cursor-paginator-through-when-serialize/actions/workflows/test.yml/badge.svg
+[![test](https://github.com/hanksie/laravel-cursor-paginator-through-when-serialize/actions/workflows/test.yml/badge.svg)](https://github.com/HANKSIE/laravel-cursor-paginator-through-when-serialize/actions)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
