@@ -1,3 +1,7 @@
+https://github.com/hanksie/laravel-cursor-paginator-through-when-serialize/actions/workflows/test.yml/badge.svg
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ### Why make the package:
 
 When using `AbstractCursorPaginator::through()` or `AbstractCursorPaginator::getCollection()->transform()` to transform each item, and serializing
