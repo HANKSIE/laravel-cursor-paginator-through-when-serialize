@@ -1,6 +1,6 @@
 {
   "name": "hanksie/laravel-cursor-paginator-through-when-serialize",
-  "description": "add a method named throughWhenSerialize() to register callback for transforming paginator's data when serializing",
+  "description": "add a method to register callback for transforming paginator's data when serializing",
   "minimum-stability": "dev",
   "type": "library",
   "license": "MIT",

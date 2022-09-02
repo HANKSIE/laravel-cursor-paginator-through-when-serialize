@@ -17,7 +17,7 @@ class CursorPaginatorTest extends TestCase
         $cursorPaginate = User::cursorPaginate(5);
         $this->assertEquals(\Hanksie\CursorPaginator\CursorPaginator::class, get_class($cursorPaginate));
 
-        $cursorPaginate->throughWhenSerialize(function ($item) {
+        $cursorPaginate->through(function ($item) {
             return ['extra_field' => '...', 'origin' => $item];
         });
 

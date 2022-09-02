@@ -11,12 +11,13 @@ class CursorPaginator extends OriginCursorPaginator
     protected $throughWhenSerializeCallback = null;
 
     /**
+     * Register a callback for mapping each item in the slice of items to the "data" field when serialized.
      *
-     * Register $items mapping callback
      *
-     * @var callable
+     * @param  callable  $callback
+     * @return $this
      */
-    public function throughWhenSerialize(callable $callback)
+    public function through(callable $callback)
     {
         $this->throughWhenSerializeCallback = $callback;
         return $this;

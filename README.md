@@ -28,28 +28,8 @@ $item[$parameterName] ?? $item[Str::afterLast($parameterName, '.')]
 
 ### How the package fix it:
 
-Using another function for transform/mapping data we want, when serializing the function be called, Because it not changed origin $items, it can avoid Undefined index error.
+Overriding `Illuminate\Pagination\AbstractCursorPaginator::through()` to register a callback for mapping each item in the slice of items to the "data" field when serialized. It's works because it not changed origin $items, it can avoid Undefined index error.
 
 ### How to use:
 
-```php
-User::factory(10)->create();
-$cursorPaginate = User::cursorPaginate(5);
-
-// register mapping item callback
-$cursorPaginate->throughWhenSerialize(
-    /*
-     * The callback called by Illuminate\Support\Collection::map
-     * when serializing for filling 'data' field
-     */
-    function ($item) {
-        return ['extra_field' => '...', 'origin' => $item];
-    }
-);
-
-/**
- * $cursorPaginate->toArray() or $cursorPaginate->toJson()
- *
- * Call transformCallback when serialize
- * /
-```
+Just use `through()` method as before.
